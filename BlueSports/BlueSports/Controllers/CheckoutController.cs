@@ -97,13 +97,11 @@ namespace BlueSports.Controllers
                 }
 
 
-                // Tính tổng giá trị giỏ hàng
+
 
                 long totalAmount = (long)Math.Round(cart.Sum(item => item.TotalMoney), MidpointRounding.AwayFromZero);
-
-
-
-                //Tạo Order và chuẩn tạo redirect url
+                
+                // Tạo orderdetails và redirect url
                 var orderId = CreateOrder(model, cart);
                 HttpContext.Session.Remove("GioHang");
                 var redirectUrl = Url.Action("Success", "Checkout", new { orderId = orderId }, Request.Scheme);
@@ -151,7 +149,7 @@ namespace BlueSports.Controllers
             Delivered = 3
         }
 
-
+        // Trả về int thay vì IActionResult để lấy orderId
         private int CreateOrder(MuaHangVM model, List<CartItem> cart)
         {
             var order = new Order
@@ -203,6 +201,7 @@ namespace BlueSports.Controllers
         // ** END **
         public IActionResult Success(int orderId)
         {
+            Console.WriteLine($"Received orderId: {orderId}"); // Log để kiểm tra orderId
 
             var order = _context.Orders
                 .Include(x => x.User)
