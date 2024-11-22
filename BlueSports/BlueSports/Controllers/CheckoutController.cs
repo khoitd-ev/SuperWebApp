@@ -9,6 +9,8 @@ using System.Linq;
 using System;
 using BlueSports.HandleAdmin.Extension;
 using Microsoft.EntityFrameworkCore;
+using BlueSports.Services;
+using System.Text.Json;
 
 namespace BlueSports.Controllers
 {
@@ -17,11 +19,18 @@ namespace BlueSports.Controllers
         private readonly ApplicationDbContext _context;
         private readonly INotyfService _notyfService;
 
-        public CheckoutController(ApplicationDbContext context, INotyfService notyfService)
+        // KHOITD-EV SECTION
+        // ** BEGIN **
+        private readonly MoMoPaymentService _moMoPaymentService;
+
+        public CheckoutController(ApplicationDbContext context, INotyfService notyfService, MoMoPaymentService moMoPaymentService)
         {
             _context = context;
             _notyfService = notyfService;
+            _moMoPaymentService = moMoPaymentService;
         }
+        // ** END **
+
 
         private List<CartItem> GetCartItems()
         {
@@ -70,7 +79,7 @@ namespace BlueSports.Controllers
 
         [HttpPost]
         [Route("checkout", Name = "Checkout")]
-        public IActionResult Index(MuaHangVM model)
+        public async Task<IActionResult> Index(MuaHangVM model)
         {
             var cart = GetCartItems();
             var userId = HttpContext.Session.GetString("UserID");
@@ -80,21 +89,53 @@ namespace BlueSports.Controllers
                 UpdateCustomerAddress(Convert.ToInt32(userId), model.Address);
             }
 
-            
-
             try
             {
                 if (!ModelState.IsValid)
                 {
                     ViewBag.GioHang = cart;
                 }
-                // Gọi CreateOrder và chuyển hướng đến trang Success với orderId
+
+
+                // Tính tổng giá trị giỏ hàng
+
+                long totalAmount = (long)Math.Round(cart.Sum(item => item.TotalMoney), MidpointRounding.AwayFromZero);
+
+
+
+                //Tạo Order và chuẩn tạo redirect url
                 var orderId = CreateOrder(model, cart);
                 HttpContext.Session.Remove("GioHang");
-                _notyfService.Success("Order placed successfully!");
+                var redirectUrl = Url.Action("Success", "Checkout", new { orderId = orderId }, Request.Scheme);
 
-                return RedirectToAction("Success", new { orderId = orderId });
+                // NHAN NGUYEN SECTION
+                // ** BEGIN **
+                var request = new MomoPaymentRequest
+                {
+                    OrderInfo = "pay with MoMo",
+                    Amount = totalAmount, // Need to greater than 10.000 VND and below 50.000.000 VND
+                    IpnUrl = "https://webhook.site/b3088a6a-2d17-4f8d-a383-71389a6c600b",
+                    RedirectUrl = redirectUrl // TODO: Change Order ID After Creating Order
+                };
 
+                var response = await _moMoPaymentService.CreatePaymentRequest(request);
+
+                // Check if the request was successful
+                if (response.TryGetValue("resultCode", out var resultCodeElement) && resultCodeElement is JsonElement resultCodeJson && resultCodeJson.GetInt32() == 0)
+                {
+                    // Redirect to MoMo payment page using `payUrl`
+                    if (response.TryGetValue("payUrl", out var payUrlElement) && payUrlElement is JsonElement payUrlJson)
+                    {
+                        var payUrl = payUrlJson.GetString();
+                        return Redirect(payUrl);
+                    }
+                }
+                // ** END **
+
+                Console.WriteLine("Error: " + response["message"]);
+                _notyfService.Error("Payment initialization failed.");
+                ViewBag.GioHang = cart;
+                return View(model);
             }
             catch (Exception ex)
             {
@@ -103,7 +144,6 @@ namespace BlueSports.Controllers
                 return View(model);
             }
         }
-
         public enum OrderStatus
         {
             Processing = 1,
@@ -111,7 +151,7 @@ namespace BlueSports.Controllers
             Delivered = 3
         }
 
-        // Trả về int thay vì IActionResult để lấy orderId
+
         private int CreateOrder(MuaHangVM model, List<CartItem> cart)
         {
             var order = new Order
@@ -123,7 +163,7 @@ namespace BlueSports.Controllers
                 TotalAmount = cart.Sum(x => x.TotalMoney),
                 PaymentMethod = "COD",
                 EstimatedDeliveryDate = DateTime.Now,
-                DeliveryDate = DateTime.Now,
+                DeliveryDate = DateTime.Now.AddDays(3),
                 TrackingNumber = "",
             };
 
@@ -156,9 +196,13 @@ namespace BlueSports.Controllers
             }
         }
 
+        // KHOITD-EV SECTION
+        // ** BEGIN **
+        [HttpGet]
+        [Route("checkout/success", Name = "PaymentSuccess")]
+        // ** END **
         public IActionResult Success(int orderId)
         {
-            Console.WriteLine($"Received orderId: {orderId}"); // Log để kiểm tra orderId
 
             var order = _context.Orders
                 .Include(x => x.User)

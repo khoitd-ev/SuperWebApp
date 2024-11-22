@@ -1,5 +1,6 @@
 ﻿using AspNetCoreHero.ToastNotification;
 using BlueSports.Data;
+using BlueSports.Services;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 //using RoboTech.Models;
@@ -29,6 +30,12 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
                     //p.LogoutPath = "/dang-xuat/html";
                     p.AccessDeniedPath = "/not-found.html";
                 });
+
+// KHOITD-EV SECTION
+// ** BEGIN **
+// Register MoMoPaymentService
+builder.Services.AddHttpClient<MoMoPaymentService>();
+// ** END **
 
 // Add services to the container.
 builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
