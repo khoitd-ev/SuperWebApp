@@ -1,0 +1,651 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|e:\\uit\\projekt\\clone\\khoideptrai\\superwebapp\\bluesports\\bluesports\\controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|solutionrelative:bluesports\\controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|e:\\uit\\projekt\\clone\\khoideptrai\\superwebapp\\bluesports\\bluesports\\models\\momopaymentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|solutionrelative:bluesports\\models\\momopaymentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|e:\\uit\\projekt\\clone\\khoideptrai\\superwebapp\\bluesports\\bluesports\\handleadmin\\extension\\sessionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|solutionrelative:bluesports\\handleadmin\\extension\\sessionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|e:\\uit\\projekt\\clone\\khoideptrai\\superwebapp\\bluesports\\bluesports\\services\\momopaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|solutionrelative:bluesports\\services\\momopaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|e:\\uit\\projekt\\clone\\khoideptrai\\superwebapp\\bluesports\\bluesports\\views\\checkout\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|solutionrelative:bluesports\\views\\checkout\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|e:\\uit\\projekt\\clone\\khoideptrai\\superwebapp\\bluesports\\bluesports\\handleadmin\\modelviews\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|solutionrelative:bluesports\\handleadmin\\modelviews\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|e:\\uit\\projekt\\clone\\khoideptrai\\superwebapp\\bluesports\\bluesports\\handleadmin\\modelviews\\muahangvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|solutionrelative:bluesports\\handleadmin\\modelviews\\muahangvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|e:\\uit\\projekt\\clone\\khoideptrai\\superwebapp\\bluesports\\bluesports\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|solutionrelative:bluesports\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|e:\\uit\\projekt\\clone\\khoideptrai\\superwebapp\\bluesports\\bluesports\\views\\checkout\\success.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|solutionrelative:bluesports\\views\\checkout\\success.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|e:\\uit\\projekt\\clone\\khoideptrai\\superwebapp\\bluesports\\bluesports\\handleadmin\\modelviews\\xemdonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|solutionrelative:bluesports\\handleadmin\\modelviews\\xemdonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|e:\\uit\\projekt\\clone\\khoideptrai\\superwebapp\\bluesports\\bluesports\\handleadmin\\modelviews\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|solutionrelative:bluesports\\handleadmin\\modelviews\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|e:\\uit\\projekt\\clone\\khoideptrai\\superwebapp\\bluesports\\bluesports\\handleadmin\\modelviews\\muahangsuccessvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|solutionrelative:bluesports\\handleadmin\\modelviews\\muahangsuccessvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|e:\\uit\\projekt\\clone\\khoideptrai\\superwebapp\\bluesports\\bluesports\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|solutionrelative:bluesports\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|e:\\uit\\projekt\\clone\\khoideptrai\\superwebapp\\bluesports\\bluesports\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|solutionrelative:bluesports\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|e:\\uit\\projekt\\clone\\khoideptrai\\superwebapp\\bluesports\\bluesports\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|solutionrelative:bluesports\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|e:\\uit\\projekt\\clone\\khoideptrai\\superwebapp\\bluesports\\bluesports\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|solutionrelative:bluesports\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|e:\\uit\\projekt\\clone\\khoideptrai\\superwebapp\\bluesports\\bluesports\\views\\shoppingcart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|solutionrelative:bluesports\\views\\shoppingcart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|e:\\uit\\projekt\\clone\\khoideptrai\\superwebapp\\bluesports\\bluesports\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|solutionrelative:bluesports\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|e:\\uit\\projekt\\clone\\khoideptrai\\superwebapp\\bluesports\\bluesports\\views\\shared\\components\\headercart\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|solutionrelative:bluesports\\views\\shared\\components\\headercart\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|e:\\uit\\projekt\\clone\\khoideptrai\\superwebapp\\bluesports\\bluesports\\views\\shared\\components\\numbercart\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|solutionrelative:bluesports\\views\\shared\\components\\numbercart\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|e:\\uit\\projekt\\clone\\khoideptrai\\superwebapp\\bluesports\\bluesports\\views\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|solutionrelative:bluesports\\views\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|e:\\uit\\projekt\\clone\\khoideptrai\\superwebapp\\bluesports\\bluesports\\controllers\\searchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|solutionrelative:bluesports\\controllers\\searchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|e:\\uit\\projekt\\clone\\khoideptrai\\superwebapp\\bluesports\\bluesports\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|solutionrelative:bluesports\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|e:\\uit\\projekt\\clone\\khoideptrai\\superwebapp\\bluesports\\bluesports\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|solutionrelative:bluesports\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|e:\\uit\\projekt\\clone\\khoideptrai\\superwebapp\\bluesports\\bluesports\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|solutionrelative:bluesports\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|e:\\uit\\projekt\\clone\\khoideptrai\\superwebapp\\bluesports\\bluesports\\handleadmin\\modelviews\\changepasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|solutionrelative:bluesports\\handleadmin\\modelviews\\changepasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|e:\\uit\\projekt\\clone\\khoideptrai\\superwebapp\\bluesports\\bluesports\\handleadmin\\modelviews\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|solutionrelative:bluesports\\handleadmin\\modelviews\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|e:\\uit\\projekt\\clone\\khoideptrai\\superwebapp\\bluesports\\bluesports\\views\\account\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|solutionrelative:bluesports\\views\\account\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|e:\\uit\\projekt\\clone\\khoideptrai\\superwebapp\\bluesports\\bluesports\\views\\account\\_changepasswordpartialview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|solutionrelative:bluesports\\views\\account\\_changepasswordpartialview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|e:\\uit\\projekt\\clone\\khoideptrai\\superwebapp\\bluesports\\bluesports\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|solutionrelative:bluesports\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|e:\\uit\\projekt\\clone\\khoideptrai\\superwebapp\\bluesports\\bluesports\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|solutionrelative:bluesports\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|e:\\uit\\projekt\\clone\\khoideptrai\\superwebapp\\bluesports\\bluesports\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|solutionrelative:bluesports\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|e:\\uit\\projekt\\clone\\khoideptrai\\superwebapp\\bluesports\\bluesports\\views\\shared\\_layoutaccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|solutionrelative:bluesports\\views\\shared\\_layoutaccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|e:\\uit\\projekt\\clone\\khoideptrai\\superwebapp\\bluesports\\bluesports\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|solutionrelative:bluesports\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|e:\\uit\\projekt\\clone\\khoideptrai\\superwebapp\\bluesports\\bluesports\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|solutionrelative:bluesports\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|e:\\uit\\projekt\\clone\\khoideptrai\\superwebapp\\bluesports\\bluesports\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|solutionrelative:bluesports\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|e:\\uit\\projekt\\clone\\khoideptrai\\superwebapp\\bluesports\\bluesports\\wwwroot\\adminassets\\images\\others\\nvidia-thumb.png||{58961B49-13E0-48C0-9258-13CBC4D40279}",
+      "RelativeMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|solutionrelative:bluesports\\wwwroot\\adminassets\\images\\others\\nvidia-thumb.png||{58961B49-13E0-48C0-9258-13CBC4D40279}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 173,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 37,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SessionExtensions.cs",
+              "DocumentMoniker": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\HandleAdmin\\Extension\\SessionExtensions.cs",
+              "RelativeDocumentMoniker": "BlueSports\\HandleAdmin\\Extension\\SessionExtensions.cs",
+              "ToolTip": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\HandleAdmin\\Extension\\SessionExtensions.cs",
+              "RelativeToolTip": "BlueSports\\HandleAdmin\\Extension\\SessionExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T12:41:57.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CartItem.cs",
+              "DocumentMoniker": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\HandleAdmin\\ModelViews\\CartItem.cs",
+              "RelativeDocumentMoniker": "BlueSports\\HandleAdmin\\ModelViews\\CartItem.cs",
+              "ToolTip": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\HandleAdmin\\ModelViews\\CartItem.cs",
+              "RelativeToolTip": "BlueSports\\HandleAdmin\\ModelViews\\CartItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T11:59:59.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Success.cshtml",
+              "DocumentMoniker": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Views\\Checkout\\Success.cshtml",
+              "RelativeDocumentMoniker": "BlueSports\\Views\\Checkout\\Success.cshtml",
+              "ToolTip": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Views\\Checkout\\Success.cshtml",
+              "RelativeToolTip": "BlueSports\\Views\\Checkout\\Success.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-21T11:54:28.535Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Views\\Checkout\\Index.cshtml",
+              "RelativeDocumentMoniker": "BlueSports\\Views\\Checkout\\Index.cshtml",
+              "ToolTip": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Views\\Checkout\\Index.cshtml",
+              "RelativeToolTip": "BlueSports\\Views\\Checkout\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-21T11:51:18.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "XemDonHang.cs",
+              "DocumentMoniker": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\HandleAdmin\\ModelViews\\XemDonHang.cs",
+              "RelativeDocumentMoniker": "BlueSports\\HandleAdmin\\ModelViews\\XemDonHang.cs",
+              "ToolTip": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\HandleAdmin\\ModelViews\\XemDonHang.cs",
+              "RelativeToolTip": "BlueSports\\HandleAdmin\\ModelViews\\XemDonHang.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T11:33:55.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MuaHangVM.cs",
+              "DocumentMoniker": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\HandleAdmin\\ModelViews\\MuaHangVM.cs",
+              "RelativeDocumentMoniker": "BlueSports\\HandleAdmin\\ModelViews\\MuaHangVM.cs",
+              "ToolTip": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\HandleAdmin\\ModelViews\\MuaHangVM.cs",
+              "RelativeToolTip": "BlueSports\\HandleAdmin\\ModelViews\\MuaHangVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T11:33:51.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MuaHangSuccessVM.cs",
+              "DocumentMoniker": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\HandleAdmin\\ModelViews\\MuaHangSuccessVM.cs",
+              "RelativeDocumentMoniker": "BlueSports\\HandleAdmin\\ModelViews\\MuaHangSuccessVM.cs",
+              "ToolTip": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\HandleAdmin\\ModelViews\\MuaHangSuccessVM.cs",
+              "RelativeToolTip": "BlueSports\\HandleAdmin\\ModelViews\\MuaHangSuccessVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T11:33:47.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MomoPaymentRequest.cs",
+              "DocumentMoniker": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Models\\MomoPaymentRequest.cs",
+              "RelativeDocumentMoniker": "BlueSports\\Models\\MomoPaymentRequest.cs",
+              "ToolTip": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Models\\MomoPaymentRequest.cs",
+              "RelativeToolTip": "BlueSports\\Models\\MomoPaymentRequest.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAowBUAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T11:33:40.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Category.cs",
+              "DocumentMoniker": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "BlueSports\\Models\\Category.cs",
+              "ToolTip": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Models\\Category.cs",
+              "RelativeToolTip": "BlueSports\\Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T12:56:18.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Product.cs",
+              "DocumentMoniker": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "BlueSports\\Models\\Product.cs",
+              "ToolTip": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Models\\Product.cs",
+              "RelativeToolTip": "BlueSports\\Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T12:52:23.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Views\\Shared\\Components\\NumberCart\\Default.cshtml",
+              "RelativeDocumentMoniker": "BlueSports\\Views\\Shared\\Components\\NumberCart\\Default.cshtml",
+              "ToolTip": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Views\\Shared\\Components\\NumberCart\\Default.cshtml",
+              "RelativeToolTip": "BlueSports\\Views\\Shared\\Components\\NumberCart\\Default.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-12T21:10:54.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Views\\Shared\\Components\\HeaderCart\\Default.cshtml",
+              "RelativeDocumentMoniker": "BlueSports\\Views\\Shared\\Components\\HeaderCart\\Default.cshtml",
+              "ToolTip": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Views\\Shared\\Components\\HeaderCart\\Default.cshtml",
+              "RelativeToolTip": "BlueSports\\Views\\Shared\\Components\\HeaderCart\\Default.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-12T21:10:44.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Views\\ShoppingCart\\Index.cshtml",
+              "RelativeDocumentMoniker": "BlueSports\\Views\\ShoppingCart\\Index.cshtml",
+              "ToolTip": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Views\\ShoppingCart\\Index.cshtml",
+              "RelativeToolTip": "BlueSports\\Views\\ShoppingCart\\Index.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAAcAAABoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-12T21:09:28.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Views\\Product\\Details.cshtml",
+              "RelativeDocumentMoniker": "BlueSports\\Views\\Product\\Details.cshtml",
+              "ToolTip": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Views\\Product\\Details.cshtml",
+              "RelativeToolTip": "BlueSports\\Views\\Product\\Details.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAIBJwD8AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-12T21:01:42.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ShoppingCartController.cs",
+              "DocumentMoniker": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Controllers\\ShoppingCartController.cs",
+              "RelativeDocumentMoniker": "BlueSports\\Controllers\\ShoppingCartController.cs",
+              "ToolTip": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Controllers\\ShoppingCartController.cs",
+              "RelativeToolTip": "BlueSports\\Controllers\\ShoppingCartController.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T20:57:36.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "SearchController.cs",
+              "DocumentMoniker": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Controllers\\SearchController.cs",
+              "RelativeDocumentMoniker": "BlueSports\\Controllers\\SearchController.cs",
+              "ToolTip": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Controllers\\SearchController.cs",
+              "RelativeToolTip": "BlueSports\\Controllers\\SearchController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T20:24:43.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "BlueSports\\Controllers\\ProductController.cs",
+              "ToolTip": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "BlueSports\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T20:23:05.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "BlueSports\\Controllers\\HomeController.cs",
+              "ToolTip": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "BlueSports\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T20:23:04.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Views\\Account\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "BlueSports\\Views\\Account\\Dashboard.cshtml",
+              "ToolTip": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Views\\Account\\Dashboard.cshtml",
+              "RelativeToolTip": "BlueSports\\Views\\Account\\Dashboard.cshtml",
+              "ViewState": "AgIAAFQAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-12T19:56:20.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ChangePasswordViewModel.cs",
+              "DocumentMoniker": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\HandleAdmin\\ModelViews\\ChangePasswordViewModel.cs",
+              "RelativeDocumentMoniker": "BlueSports\\HandleAdmin\\ModelViews\\ChangePasswordViewModel.cs",
+              "ToolTip": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\HandleAdmin\\ModelViews\\ChangePasswordViewModel.cs",
+              "RelativeToolTip": "BlueSports\\HandleAdmin\\ModelViews\\ChangePasswordViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T19:56:11.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "_ChangePasswordPartialView.cshtml",
+              "DocumentMoniker": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Views\\Account\\_ChangePasswordPartialView.cshtml",
+              "RelativeDocumentMoniker": "BlueSports\\Views\\Account\\_ChangePasswordPartialView.cshtml",
+              "ToolTip": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Views\\Account\\_ChangePasswordPartialView.cshtml",
+              "RelativeToolTip": "BlueSports\\Views\\Account\\_ChangePasswordPartialView.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-12T19:55:42.937Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Order.cs",
+              "DocumentMoniker": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "BlueSports\\Models\\Order.cs",
+              "ToolTip": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Models\\Order.cs",
+              "RelativeToolTip": "BlueSports\\Models\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T16:33:01.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Models\\User.cs",
+              "RelativeDocumentMoniker": "BlueSports\\Models\\User.cs",
+              "ToolTip": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Models\\User.cs",
+              "RelativeToolTip": "BlueSports\\Models\\User.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA1wBgAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T16:32:23.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\HandleAdmin\\ModelViews\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "BlueSports\\HandleAdmin\\ModelViews\\RegisterViewModel.cs",
+              "ToolTip": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\HandleAdmin\\ModelViews\\RegisterViewModel.cs",
+              "RelativeToolTip": "BlueSports\\HandleAdmin\\ModelViews\\RegisterViewModel.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T16:26:29.238Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\HandleAdmin\\ModelViews\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "BlueSports\\HandleAdmin\\ModelViews\\LoginViewModel.cs",
+              "ToolTip": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\HandleAdmin\\ModelViews\\LoginViewModel.cs",
+              "RelativeToolTip": "BlueSports\\HandleAdmin\\ModelViews\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T16:26:23.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "_LayoutAccount.cshtml",
+              "DocumentMoniker": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Views\\Shared\\_LayoutAccount.cshtml",
+              "RelativeDocumentMoniker": "BlueSports\\Views\\Shared\\_LayoutAccount.cshtml",
+              "ToolTip": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Views\\Shared\\_LayoutAccount.cshtml",
+              "RelativeToolTip": "BlueSports\\Views\\Shared\\_LayoutAccount.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-12T16:21:38.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "BlueSports\\Views\\Account\\Register.cshtml",
+              "ToolTip": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "BlueSports\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAYwCAAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-12T16:13:50.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "BlueSports\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "BlueSports\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAIBJwLIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-12T16:13:07.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "BlueSports\\Views\\Account\\Login.cshtml",
+              "ToolTip": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "BlueSports\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-12T16:05:28.152Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "BlueSports\\Views\\Home\\Index.cshtml",
+              "ToolTip": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "BlueSports\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-12T16:05:06.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\appsettings.json",
+              "RelativeDocumentMoniker": "BlueSports\\appsettings.json",
+              "ToolTip": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\appsettings.json",
+              "RelativeToolTip": "BlueSports\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-12T15:49:44.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "BlueSports\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "BlueSports\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T15:32:46.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "nvidia-thumb.png",
+              "DocumentMoniker": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\wwwroot\\Adminassets\\images\\others\\nvidia-thumb.png",
+              "RelativeDocumentMoniker": "BlueSports\\wwwroot\\Adminassets\\images\\others\\nvidia-thumb.png",
+              "ToolTip": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\wwwroot\\Adminassets\\images\\others\\nvidia-thumb.png",
+              "RelativeToolTip": "BlueSports\\wwwroot\\Adminassets\\images\\others\\nvidia-thumb.png",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-11-07T18:36:28.529Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "BlueSports\\Controllers\\AccountController.cs",
+              "ToolTip": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "BlueSports\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAALEAAAAAAAAAAAAiwLoAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T18:24:26.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Program.cs",
+              "RelativeDocumentMoniker": "BlueSports\\Program.cs",
+              "ToolTip": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Program.cs",
+              "RelativeToolTip": "BlueSports\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T16:58:45.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MoMoPaymentService.cs",
+              "DocumentMoniker": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Services\\MoMoPaymentService.cs",
+              "RelativeDocumentMoniker": "BlueSports\\Services\\MoMoPaymentService.cs",
+              "ToolTip": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Services\\MoMoPaymentService.cs",
+              "RelativeToolTip": "BlueSports\\Services\\MoMoPaymentService.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowDMAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T16:44:26.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CheckoutController.cs",
+              "DocumentMoniker": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Controllers\\CheckoutController.cs",
+              "RelativeDocumentMoniker": "BlueSports\\Controllers\\CheckoutController.cs",
+              "ToolTip": "E:\\UIT\\Projekt\\clone\\KhoiDepTrai\\SuperWebApp\\BlueSports\\BlueSports\\Controllers\\CheckoutController.cs",
+              "RelativeToolTip": "BlueSports\\Controllers\\CheckoutController.cs",
+              "ViewState": "AgIAAI4AAAAAAAAAAAAwwKUAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T15:13:27.322Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
