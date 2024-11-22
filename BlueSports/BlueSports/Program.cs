@@ -10,8 +10,14 @@ using System.Text.Unicode;
 var builder = WebApplication.CreateBuilder(args);
 
 // Cấu hình DbContext
+// Cấu hình bằng sql server
+//builder.Services.AddDbContext<ApplicationDbContext>(options =>
+//    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+// cấu hình bằng mysql
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseMySQL(builder.Configuration.GetConnectionString("DefaultConnection")));
+
 
 builder.Services.AddSingleton<HtmlEncoder>(HtmlEncoder.Create(allowedRanges: new[] { UnicodeRanges.All }));
 builder.Services.AddDistributedMemoryCache();
