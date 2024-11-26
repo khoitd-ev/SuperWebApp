@@ -6,6 +6,8 @@ using Microsoft.EntityFrameworkCore;
 using System.Text.Encodings.Web;
 using System.Text.Unicode;
 
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Cấu hình DbContext
@@ -53,6 +55,7 @@ builder.Services.AddNotyf(config =>
     config.IsDismissable = true;
     config.Position = NotyfPosition.TopRight;
 });
+
 
 // Build Application
 var app = builder.Build();

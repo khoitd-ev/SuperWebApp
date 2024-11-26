@@ -150,6 +150,13 @@ INSERT INTO Categories (CategoryName, Description) VALUES
 ('Tai Nghe', ''),
 ('Card màn hình', '');
 
+-- thêm dữ liệu cho OrderStatus
+INSERT INTO OrderStatus (StatusID, StatusName) VALUES 
+(1, 'Processing'),
+(2, 'Shipped'),
+(3, 'Delivered');
+
+
 -- Thêm tài khoản Admin
 INSERT INTO Users (UserName, Email, PasswordHash, PhoneNumber, ShippingAddress, DateJoined, UserType)
 VALUES ('admin', 'admin@example.com', '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918', '123456789', 'Admin Address', CURRENT_TIMESTAMP, 'Admin');

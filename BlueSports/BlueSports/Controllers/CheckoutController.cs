@@ -172,7 +172,7 @@ namespace BlueSports.Controllers
                     OrderDate = DateTime.Now,
                     ShippingStatus = (int)OrderStatus.Processing,
                     TotalAmount = cart.Sum(x => x.TotalMoney),
-                    PaymentMethod = "COD",
+                    PaymentMethod = "E-Wallet", // Credit card
                     EstimatedDeliveryDate = DateTime.Now,
                     DeliveryDate = DateTime.Now.AddDays(3),
                     TrackingNumber = "",
