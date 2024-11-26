@@ -20,36 +20,94 @@ namespace BlueSports.Controllers
 
 
         [Route("ProductList", Name = "ShopProduct")]
-        public IActionResult Index(int? page)
+        public IActionResult Index(int? page, int? categoryId = null, int? brandId = null, int sortOption = 0, string priceRange = "")
         {
             try
             {
                 // Thiết lập phân trang
                 int pageNumber = page ?? 1;
-                int pageSize = 10;
-                ViewBag.Categories = _context.Categories;
-                // Lấy danh sách sản phẩm và sắp xếp theo CreatedDate
-                var products = _context.Products
+                const int pageSize = 10;
+
+                // Lấy danh sách sản phẩm
+                IQueryable<Product> products = _context.Products
                     .Include(p => p.Category)
-                    .AsNoTracking()
-                    .OrderBy(x => x.DateAdded);
+                    .Include(p => p.Brand)
+                    .AsNoTracking();
 
+                // Lọc theo CategoryID nếu có
+                if (categoryId.HasValue && categoryId.Value > 0)
+                {
+                    products = products.Where(p => p.CategoryID == categoryId);
+                    ViewBag.FilterCategory = _context.Categories.FirstOrDefault(c => c.CategoryID == categoryId)?.CategoryName;
+                }
+
+                // Lọc theo BrandID nếu có
+                if (brandId.HasValue && brandId.Value > 0)
+                {
+                    products = products.Where(p => p.BrandID == brandId);
+                }
+
+                // Sắp xếp sản phẩm
+                products = sortOption switch
+                {
+                    2 => products.OrderBy(p => p.Price),              // Giá tăng dần
+                    3 => products.OrderByDescending(p => p.Price),   // Giá giảm dần
+                    _ => products.OrderByDescending(p => p.DateAdded) // Mặc định: Sản phẩm mới nhất
+                };
+                // Lọc theo giá
+                switch (priceRange)
+                {
+                    // Bộ lọc giá 5, 5-10, trên 10 triệu
+                    case "under5":
+                        products = products.Where(p => p.Price < 5000000);
+                        break;
+                    case "5to10":
+                        products = products.Where(p => p.Price >= 5000000 && p.Price <= 10000000);
+                        break;
+                    case "over10":
+                        products = products.Where(p => p.Price > 10000000);
+                        break;
+
+                    // Bộ lọc giá dưới 1tr, 1-2tr, trên 2tr
+                    case "under1":
+                        products = products.Where(p => p.Price < 1000000);
+                        break;
+                    case "1to2":
+                        products = products.Where(p => p.Price >= 1000000 && p.Price <= 2000000);
+                        break;
+                    case "over2":
+                        products = products.Where(p => p.Price > 2000000);
+                        break;
+
+                    // Bộ lọc giá mặc định
+                    case "under20":
+                        products = products.Where(p => p.Price < 20000000);
+                        break;
+                    case "20to25":
+                        products = products.Where(p => p.Price >= 20000000 && p.Price <= 25000000);
+                        break;
+                    case "over25":
+                        products = products.Where(p => p.Price > 25000000);
+                        break;
+                }
                 // Áp dụng phân trang
-                IPagedList<Product> models = new PagedList<Product>(products, pageNumber, pageSize);
+                IPagedList<Product> model = new PagedList<Product>(products, pageNumber, pageSize);
 
-                // Thiết lập dữ liệu danh mục cho ViewBag
+                // Thiết lập danh sách danh mục và thương hiệu cho giao diện
+                ViewBag.Categories = _context.Categories.ToList();
+                ViewBag.Brands = _context.Brands.ToList();
                 ViewBag.CurrentPage = pageNumber;
-                ViewData["DanhMuc"] = new SelectList(_context.Categories, "CategoryID", "CategoryName");
 
-                return View(models);
+                // Trả về View với model danh sách sản phẩm
+                return View(model);
             }
             catch (Exception ex)
             {
-                // Ghi log lỗi nếu cần
                 Console.WriteLine($"Error: {ex.Message}");
                 return RedirectToAction("Index", "Home");
             }
         }
+
 
 
 

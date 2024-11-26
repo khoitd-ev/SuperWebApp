@@ -3,23 +3,25 @@ using BlueSports.Data;
 using BlueSports.Services;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
-//using RoboTech.Models;
 using System.Text.Encodings.Web;
 using System.Text.Unicode;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Cấu hình DbContext
-// Cấu hình bằng sql server
+// cấu hình bằng sqlserver
 //builder.Services.AddDbContext<ApplicationDbContext>(options =>
 //    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// cấu hình bằng mysql
+//// cấu hình bằng mysql
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseMySQL(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+// Bật mã hóa HTML (để hỗ trợ Unicode)
+builder.Services.AddSingleton<HtmlEncoder>(
+    HtmlEncoder.Create(allowedRanges: new[] { UnicodeRanges.All }));
 
-builder.Services.AddSingleton<HtmlEncoder>(HtmlEncoder.Create(allowedRanges: new[] { UnicodeRanges.All }));
+// Cấu hình Session
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
 {
@@ -27,57 +29,61 @@ builder.Services.AddSession(options =>
     options.Cookie.HttpOnly = true;
     options.Cookie.IsEssential = true;
 });
+
+// Cấu hình Authentication với Cookie
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-                .AddCookie(p =>
-                {
-                    p.Cookie.Name = "UserLoginCookie";
-                    p.ExpireTimeSpan = TimeSpan.FromDays(1);
-                    p.LoginPath = "/Log-in";
-                    //p.LogoutPath = "/dang-xuat/html";
-                    p.AccessDeniedPath = "/not-found.html";
-                });
+    .AddCookie(options =>
+    {
+        options.Cookie.Name = "UserLoginCookie";
+        options.ExpireTimeSpan = TimeSpan.FromDays(1);
+        options.LoginPath = "/Log-in"; // Trang đăng nhập nếu chưa xác thực
+        options.AccessDeniedPath = "/not-found.html"; // Trang lỗi truy cập bị từ chối
+    });
 
-// KHOITD-EV SECTION
-// ** BEGIN **
-// Register MoMoPaymentService
+// Đăng ký dịch vụ MoMoPaymentService
 builder.Services.AddHttpClient<MoMoPaymentService>();
-// ** END **
 
-// Add services to the container.
+// Bật Runtime Compilation cho Razor View
 builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
-/*builder.Services.AddSignalR();*/
+
+// Cấu hình Toast Notification
 builder.Services.AddNotyf(config =>
 {
     config.DurationInSeconds = 5;
     config.IsDismissable = true;
     config.Position = NotyfPosition.TopRight;
 });
+
+// Build Application
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Cấu hình Middleware và Request Pipeline
+
+// Xử lý lỗi không phải trong môi trường Development
 if (!app.Environment.IsDevelopment())
 {
-    app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
+    app.UseExceptionHandler("/Home/Error"); // Chuyển hướng lỗi tới Home/Error
+    app.UseHsts(); // Kích hoạt HTTP Strict Transport Security
 }
 
-app.UseHttpsRedirection();
-app.UseStaticFiles();
-/*app.UseSession();*/
+app.UseHttpsRedirection(); // Tự động chuyển hướng HTTP sang HTTPS
+app.UseStaticFiles(); // Cho phép truy cập các tệp tĩnh như CSS, JS
 
-app.UseSession();
-app.UseCookiePolicy();
-app.UseRouting();
+app.UseSession(); // Kích hoạt Session Middleware
+app.UseCookiePolicy(); // Kích hoạt Cookie Policy
+app.UseRouting(); // Định tuyến yêu cầu HTTP
 
-app.UseAuthentication();
-app.UseAuthorization();
+app.UseAuthentication(); // Kích hoạt Middleware xác thực
+app.UseAuthorization(); // Kích hoạt Middleware phân quyền
 
+// Cấu hình xử lý lỗi toàn cục
+app.UseExceptionHandler("/Home/Error"); // Điều hướng đến trang lỗi chung
+app.UseStatusCodePagesWithReExecute("/Home/Error", "?code={0}"); // Xử lý lỗi trạng thái HTTP
 
+// Định tuyến mặc định
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
-
-
+// Chạy ứng dụng
 app.Run();

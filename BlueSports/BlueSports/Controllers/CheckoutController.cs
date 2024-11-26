@@ -38,44 +38,59 @@ namespace BlueSports.Controllers
             return cartItems;
         }
 
-        private void UpdateCustomerAddress(int userId, string address)
+        private IActionResult UpdateCustomerAddress(int userId, string address)
         {
-            User? customer = _context.Users.SingleOrDefault(x => x.UserID == Convert.ToInt32(userId));
-            if (customer != null)
+            try
             {
-                customer.ShippingAddress = address;
-                _context.Update(customer);
-                _context.SaveChanges();
+                var customer = _context.Users.SingleOrDefault(x => x.UserID == Convert.ToInt32(userId));
+                if (customer != null)
+                {
+                    customer.ShippingAddress = address;
+                    _context.Update(customer);
+                    _context.SaveChanges();
+                }
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error updating address: {ex.Message}");
+                return RedirectToAction("Error", "Home", new { code = 500 });
             }
         }
 
         [Route("checkout", Name = "Checkout")]
         public IActionResult Index(string returnUrl = null)
         {
-            var cart = GetCartItems();
-            var userId = HttpContext.Session.GetString("UserID");
-            var model = new MuaHangVM
+            try
             {
-                Carts = cart // Gán giỏ hàng vào model
-            };
-
-            if (userId != null)
-            {
-                var customer = _context.Users.AsNoTracking().SingleOrDefault(x => x.UserID == Convert.ToInt32(userId));
-                if (customer != null)
+                var cart = GetCartItems();
+                var userId = HttpContext.Session.GetString("UserID");
+                var model = new MuaHangVM
                 {
-                    model.CustomerId = customer.UserID;
-                    model.FullName = customer.UserName;
-                    model.Email = customer.Email;
-                    model.Phone = customer.PhoneNumber;
-                    model.Address = customer.ShippingAddress;
+                    Carts = cart // Gán giỏ hàng vào model
+                };
+
+                if (userId != null)
+                {
+                    var customer = _context.Users.AsNoTracking().SingleOrDefault(x => x.UserID == Convert.ToInt32(userId));
+                    if (customer != null)
+                    {
+                        model.CustomerId = customer.UserID;
+                        model.FullName = customer.UserName;
+                        model.Email = customer.Email;
+                        model.Phone = customer.PhoneNumber;
+                        model.Address = customer.ShippingAddress;
+                    }
                 }
+
+                return View(model);
             }
-
-            return View(model);
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error loading checkout page: {ex.Message}");
+                return RedirectToAction("Error", "Home", new { code = 500 });
+            }
         }
-
-
 
         [HttpPost]
         [Route("checkout", Name = "Checkout")]
@@ -86,7 +101,8 @@ namespace BlueSports.Controllers
 
             if (userId != null)
             {
-                UpdateCustomerAddress(Convert.ToInt32(userId), model.Address);
+                var result = UpdateCustomerAddress(Convert.ToInt32(userId), model.Address);
+                if (result is RedirectToActionResult) return result; // Điều hướng nếu lỗi
             }
 
             try
@@ -96,11 +112,8 @@ namespace BlueSports.Controllers
                     ViewBag.GioHang = cart;
                 }
 
-
-
-
                 long totalAmount = (long)Math.Round(cart.Sum(item => item.TotalMoney), MidpointRounding.AwayFromZero);
-                
+
                 // Tạo orderdetails và redirect url
                 var orderId = CreateOrder(model, cart);
                 HttpContext.Session.Remove("GioHang");
@@ -111,9 +124,9 @@ namespace BlueSports.Controllers
                 var request = new MomoPaymentRequest
                 {
                     OrderInfo = "pay with MoMo",
-                    Amount = totalAmount, // Need to greater than 10.000 VND and below 50.000.000 VND
+                    Amount = totalAmount,
                     IpnUrl = "https://webhook.site/b3088a6a-2d17-4f8d-a383-71389a6c600b",
-                    RedirectUrl = redirectUrl // TODO: Change Order ID After Creating Order
+                    RedirectUrl = redirectUrl
                 };
 
                 var response = await _moMoPaymentService.CreatePaymentRequest(request);
@@ -121,7 +134,6 @@ namespace BlueSports.Controllers
                 // Check if the request was successful
                 if (response.TryGetValue("resultCode", out var resultCodeElement) && resultCodeElement is JsonElement resultCodeJson && resultCodeJson.GetInt32() == 0)
                 {
-                    // Redirect to MoMo payment page using `payUrl`
                     if (response.TryGetValue("payUrl", out var payUrlElement) && payUrlElement is JsonElement payUrlJson)
                     {
                         var payUrl = payUrlJson.GetString();
@@ -138,10 +150,10 @@ namespace BlueSports.Controllers
             catch (Exception ex)
             {
                 Console.WriteLine($"Error: {ex.Message}");
-                ViewBag.GioHang = cart;
-                return View(model);
+                return RedirectToAction("Error", "Home", new { code = 500 });
             }
         }
+
         public enum OrderStatus
         {
             Processing = 1,
@@ -149,24 +161,23 @@ namespace BlueSports.Controllers
             Delivered = 3
         }
 
-        // Trả về int thay vì IActionResult để lấy orderId
         private int CreateOrder(MuaHangVM model, List<CartItem> cart)
         {
-            var order = new Order
-            {
-                UserID = model.CustomerId,
-                ShippingAddress = model.Address,
-                OrderDate = DateTime.Now,
-                ShippingStatus = (int)OrderStatus.Processing,  // Gán giá trị số nguyên cho trạng thái
-                TotalAmount = cart.Sum(x => x.TotalMoney),
-                PaymentMethod = "COD",
-                EstimatedDeliveryDate = DateTime.Now,
-                DeliveryDate = DateTime.Now.AddDays(3),
-                TrackingNumber = "",
-            };
-
             try
             {
+                var order = new Order
+                {
+                    UserID = model.CustomerId,
+                    ShippingAddress = model.Address,
+                    OrderDate = DateTime.Now,
+                    ShippingStatus = (int)OrderStatus.Processing,
+                    TotalAmount = cart.Sum(x => x.TotalMoney),
+                    PaymentMethod = "COD",
+                    EstimatedDeliveryDate = DateTime.Now,
+                    DeliveryDate = DateTime.Now.AddDays(3),
+                    TrackingNumber = "",
+                };
+
                 _context.Add(order);
                 _context.SaveChanges();
 
@@ -183,49 +194,47 @@ namespace BlueSports.Controllers
                 }
 
                 _context.SaveChanges();
-
-                // Trả về orderId sau khi tạo đơn hàng thành công
                 return order.OrderID;
             }
-            catch (DbUpdateException ex)
+            catch (Exception ex)
             {
-                Console.WriteLine("Error occurred while saving changes: " + ex.InnerException?.Message);
+                Console.WriteLine($"Error occurred while creating order: {ex.Message}");
                 throw;
             }
         }
 
-        // KHOITD-EV SECTION
-        // ** BEGIN **
         [HttpGet]
         [Route("checkout/success", Name = "PaymentSuccess")]
-        // ** END **
         public IActionResult Success(int orderId)
         {
-            Console.WriteLine($"Received orderId: {orderId}"); // Log để kiểm tra orderId
-
-            var order = _context.Orders
-                .Include(x => x.User)
-                .AsNoTracking()
-                .FirstOrDefault(x => x.OrderID == orderId);
-
-            if (order == null)
+            try
             {
-                _notyfService.Error("Order not found.");
-                return RedirectToAction("Index", "Home"); // Điều hướng nếu không tìm thấy đơn hàng
+                var order = _context.Orders
+                    .Include(x => x.User)
+                    .AsNoTracking()
+                    .FirstOrDefault(x => x.OrderID == orderId);
+
+                if (order == null)
+                {
+                    _notyfService.Error("Order not found.");
+                    return RedirectToAction("Error", "Home", new { code = 404 });
+                }
+
+                var model = new MuaHangSuccessVM
+                {
+                    DonHangID = order.OrderID,
+                    FullName = order.User?.UserName ?? "N/A",
+                    Phone = order.User?.PhoneNumber ?? "N/A",
+                    Address = order.ShippingAddress
+                };
+
+                return View(model);
             }
-
-            var model = new MuaHangSuccessVM
+            catch (Exception ex)
             {
-                DonHangID = order.OrderID,
-                FullName = order.User?.UserName ?? "N/A",
-                Phone = order.User?.PhoneNumber ?? "N/A",
-                Address = order.ShippingAddress
-            };
-
-            return View(model);
+                Console.WriteLine($"Error retrieving success page: {ex.Message}");
+                return RedirectToAction("Error", "Home", new { code = 500 });
+            }
         }
-
-
-
     }
 }

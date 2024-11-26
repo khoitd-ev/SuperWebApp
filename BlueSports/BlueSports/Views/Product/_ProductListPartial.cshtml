@@ -33,4 +33,19 @@
             </div>
         </div>
     }
+    <section class="pagination-val text-center mt-4">
+        <a href="#">«</a>
+        <a href="#" class="active_pagin">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">»</a>
+    </section>
+    <div class="pagination-area pt-10">
+        <ul class="pagination justify-content-center">
+            <pager class="pager-container" list="@Model" options="@PagedList.Core.Mvc.PagedListRenderOptions.Bootstrap4PageNumbersOnly" asp-area="" asp-controller="Product" asp-action="Index" />
+        </ul>
+    </div>
 </div>

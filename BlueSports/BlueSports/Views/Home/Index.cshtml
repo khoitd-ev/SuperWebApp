@@ -1,4 +1,7 @@
-﻿
+﻿@model IEnumerable<BlueSports.Models.Product>
+@using BlueSports.Models
+@using BlueSports.HandleAdmin.Helper
+
 
 <div>
     <div class="left-zone ads"  >
@@ -16,9 +19,11 @@
                 </div>
                 <ul class="nav-item">
                     <li >
-                            <button class="btn" type="button">
-                                <i class="fa-solid fa-laptop"></i>Laptop
-                            </button>
+                        <a href="/ProductList?categoryId=1" class="btn" type="button">
+                            <i class="fa-solid fa-laptop"></i> &nbspLaptop
+                        </a>
+
+
                         <ul class="subnav">
                             <li >
                                 <a class="head-nav" href="danhmuc/laptop">
@@ -30,22 +35,22 @@
                                     <li>
                                         <span>Hãng</span>
                                         <ul>
-                                            <li><a href="#">ACER</a></li>
-                                            <li><a href="#">ASUS</a></li>
-                                            <li><a href="#">MSI</a></li>
+                                            <li><a href="/ProductList?categoryId=1&brandId=12">ASUS</a></li>
+                                            <li><a href="/ProductList?categoryId=1&brandId=17">MSI</a></li>
+@*                                             <li><a href="">ACER</a></li>
                                             <li><a href="#">LENOVO</a></li>
-                                            <li><a href="#">DELL</a></li>
+                                            <li><a href="#">DELL</a></li> *@
                                         </ul>
                                     </li>
                                     <li>
                                         <span>Giá</span>
                                         <ul>
-                                            <li><a href="#">Below 20 milion dong</a></li>
-                                            <li><a href="#">Between 20 milion and 25 milion</a></li>
-                                            <li><a href="#">More than 25 milion dong</a></li>
+                                            <li><a href="/ProductList?categoryId=1&priceRange=under20">Dưới 20 Triệu</a></li>
+                                            <li><a href="/ProductList?categoryId=1&priceRange=20to25">20 - 25 Triệu</a></li>
+                                            <li><a href="/ProductList?categoryId=1&priceRange=over25">Trên 25 Triệu</a></li>
                                         </ul>
                                     </li>
-                                    <li>
+@*                                     <li>
                                         <span>Card Màn Hình</span>
                                         <ul>
                                             <li><a href="#">GTX 1650</a></li>
@@ -53,7 +58,7 @@
                                             <li><a href="#">RTX 3060</a></li>
                                             <li><a href="#">RTX 3070 / 3080</a></li>
                                         </ul>
-                                    </li>
+                                    </li> *@
                                 </ul>
                             </li>
                             <li>
@@ -66,22 +71,22 @@
                                     <li>
                                         <span>Hãng</span>
                                         <ul>
-                                            <li><a href="#">ACER</a></li>
-                                            <li><a href="#">ASUS</a></li>
-                                            <li><a href="#">MSI</a></li>
-                                            <li><a href="#">LENOVO</a></li>
-                                            <li><a href="#">DELL</a></li>
+@*                                             <li><a href="#">ACER</a></li> *@
+                                            <li><a href="/ProductList?categoryId=1&brandId=12">ASUS</a></li>
+                                            <li><a href="/ProductList?categoryId=1&brandId=17">MSI</a></li>
+@*                                             <li><a href="#">LENOVO</a></li>
+                                            <li><a href="#">DELL</a></li> *@
                                         </ul>
                                     </li>
                                     <li>
                                         <span>Giá</span>
                                         <ul>
-                                            <li><a href="#">Below 20 milion dong</a></li>
-                                            <li><a href="#">Between 20 milion and 25 milion</a></li>
-                                            <li><a href="#">More than 25 milion dong</a></li>
+                                            <li><a href="/ProductList?categoryId=1&priceRange=under20">Dưới 20 Triệu</a></li>
+                                            <li><a href="/ProductList?categoryId=1&priceRange=20to25">20 - 25 Triệu</a></li>
+                                            <li><a href="/ProductList?categoryId=1&priceRange=over25">Trên 25 Triệu</a></li>
                                         </ul>
                                     </li>
-                                    <li>
+                                    @* <li>
                                         <span>CPU</span>
                                         <ul>
                                             <li>
@@ -105,16 +110,15 @@
                                                 </a>
                                             </li>
                                         </ul>
-                                    </li>
+                                    </li> *@
                                 </ul>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <button class="btn">
-                            <i class="fa-solid fa-computer"></i>
-                            PC
-                        </button>
+                        <a href="/ProductList?categoryId=2" class="btn" type="button">
+                            <i class="fa-solid fa-laptop"></i> &nbspPC
+                        </a>
                         <ul class="subnav" style="margin-top: -157px">
                             <li>
                                 <a class="head-nav" href="#">
@@ -124,31 +128,31 @@
                                 </a>
                                 <ul class="subnav2 mb-4">
                                     <li>
-                                        <span>GVN TITAN - i9 / r9</span>
+                                        <span>Hãng</span>
                                         <ul>
-                                            <li><a href="#">Titan Plus i3090/Ti - i9</a></li>
-                                            <li><a href="#">Titan Plus i3080/Ti - i9</a></li>
-                                            <li><a href="#">Titan Plus i3070/Ti - i9</a></li>
-                                            <li><a href="#">Titan Plus i3060/Ti - i9</a></li>
+                                            <li><a href="/ProductList?categoryId=2&brandId=12">ASUS</a></li>
+                                            <li><a href="/ProductList?categoryId=2&brandId=17">MSI</a></li>
+                                            @*                                             <li><a href="">ACER</a></li>
+                                            <li><a href="#">LENOVO</a></li>
+                                            <li><a href="#">DELL</a></li> *@
                                         </ul>
                                     </li>
                                     <li>
-                                        <span>GVN PHANTOM - i7 / r7</span>
+                                        <span>Giá</span>
                                         <ul>
-                                            <li><a href="#">Phantom Plus i3080/Ti - i7</a></li>
-                                            <li><a href="#">Phantom Plus i3070/Ti - i7</a></li>
-                                            <li><a href="#">Phantom i3070 - i7</a></li>
-                                            <li><a href="#">Phantom i3060/Ti - i7</a></li>
+                                            <li><a href="/ProductList?categoryId=2&priceRange=under20">Dưới 20 Triệu</a></li>
+                                            <li><a href="/ProductList?categoryId=2&priceRange=20to25">20 - 25 Triệu</a></li>
+                                            <li><a href="/ProductList?categoryId=2&priceRange=over25">Trên 25 Triệu</a></li>
                                         </ul>
                                     </li>
-                                    <li>
+@*                                     <li>
                                         <span>GVN VIPER - i5 / r5</span>
                                         <ul>
                                             <li><a href="#">Viper Plus i3070 - i5</a></li>
                                             <li><a href="#">Viper Plus i3060/Ti - i5</a></li>
                                             <li><a href="#">Viper i3050 - i5</a></li>
                                         </ul>
-                                    </li>
+                                    </li> *@
                                 </ul>
                             </li>
                             <li>
@@ -159,23 +163,24 @@
                                 </a>
                                 <ul class="subnav2">
                                     <li>
-                                        <span>GVN Homework</span>
+                                        <span>Hãng</span>
                                         <ul>
-                                            <li><a href="#">Homework Pentium - G6405</a></li>
-                                            <li><a href="#">Homework i7</a></li>
-                                            <li><a href="#">Homework i5</a></li>
-                                            <li><a href="#">Homework i3</a></li>
+                                            <li><a href="/ProductList?categoryId=2&brandId=12">ASUS</a></li>
+                                            <li><a href="/ProductList?categoryId=2&brandId=17">MSI</a></li>
+                                            @*                                             <li><a href="">ACER</a></li>
+                                            <li><a href="#">LENOVO</a></li>
+                                            <li><a href="#">DELL</a></li> *@
                                         </ul>
                                     </li>
                                     <li>
-                                        <span>GVN Homework Mini</span>
+                                        <span>Giá</span>
                                         <ul>
-                                            <li><a href="#">Homework Mini Pentium - G6405</a></li>
-                                            <li><a href="#">Homework Mini i3 - 10105</a></li>
-                                            <li><a href="#">Homework Mini i3 - 12100</a></li>
+                                            <li><a href="/ProductList?categoryId=2&priceRange=under20">Dưới 20 Triệu</a></li>
+                                            <li><a href="/ProductList?categoryId=2&priceRange=20to25">20 - 25 Triệu</a></li>
+                                            <li><a href="/ProductList?categoryId=2&priceRange=over25">Trên 25 Triệu</a></li>
                                         </ul>
                                     </li>
-                                    <li>
+@*                                     <li>
                                         <span>Mini PC Cluster</span>
                                         <ul>
                                             <li>
@@ -194,37 +199,37 @@
                                                 </a>
                                             </li>
                                         </ul>
-                                    </li>
+                                    </li> *@
                                 </ul>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <button class="btn">
-                            <i class="fa-solid fa-display"></i>
-                            &nbspMàn Hình
-                        </button>
+                        <a href="/ProductList?categoryId=3" class="btn" type="button">
+                            <i class="fa-solid fa-laptop"></i> &nbspMàn Hình
+                        </a>
                         <ul class="subnav" style="margin-top: -235px">
                             <li>
                                 <ul class="subnav2 mt-5 mb-5">
                                     <li>
                                         <span>Hãng</span>
                                         <ul>
-                                            <li><a href="#">LG</a></li>
-                                            <li><a href="#">Dell</a></li>
-                                            <li><a href="#">ViewSonic</a></li>
-                                            <li><a href="#">Asus</a></li>
+                                            <li><a href="/ProductList?categoryId=3&brandId=12">ASUS</a></li>
+                                            <li><a href="/ProductList?categoryId=3&brandId=17">MSI</a></li>
+                                            @*                                             <li><a href="">ACER</a></li>
+                                            <li><a href="#">LENOVO</a></li>
+                                            <li><a href="#">DELL</a></li> *@
                                         </ul>
                                     </li>
                                     <li>
                                         <span>Giá</span>
                                         <ul>
-                                            <li><a href="#">Below 5 milion dong</a></li>
-                                            <li><a href="#">Between 5 milion and 10 milion</a></li>
-                                            <li><a href="#">More than 10 milion dong</a></li>
+                                            <li><a href="/ProductList?categoryId=3&priceRange=under5">Dưới 5 Triệu</a></li>
+                                            <li><a href="/ProductList?categoryId=3&priceRange=5to10">5 - 10 Triệu</a></li>
+                                            <li><a href="/ProductList?categoryId=3&priceRange=over10">Trên 10 Triệu</a></li>
                                         </ul>
                                     </li>
-                                    <li>
+                                    @* <li>
                                         <span>Độ Phân Giải</span>
                                         <ul>
                                             <li><a href="#">HD 720p</a></li>
@@ -232,12 +237,12 @@
                                             <li><a href="#"></a>2k 1440p</li>
                                             <li><a href="#">4k</a></li>
                                         </ul>
-                                    </li>
+                                    </li> *@
                                 </ul>
                             </li>
                             <li>
                                 <ul class="subnav2">
-                                    <li>
+                                    @* <li>
                                         <span>Tần Số Quét</span>
                                         <ul>
                                             <li><a href="#">60Hz</a></li>
@@ -268,36 +273,37 @@
                                                 </a>
                                             </li>
                                         </ul>
-                                    </li>
+                                    </li> *@
                                 </ul>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <button class="btn">
-                            <i class="fa-regular fa-keyboard"></i> &nbspBàn Phím
-                        </button>
+                        <a href="/ProductList?categoryId=4" class="btn" type="button">
+                            <i class="fa-solid fa-laptop"></i> &nbspBàn Phím
+                        </a>
                         <ul class="subnav" style="margin-top: -313px">
                             <li>
                                 <ul class="subnav2 mt-5 mb-5">
                                     <li>
                                         <span>Hãng</span>
                                         <ul>
-                                            <li><a href="#">Akko</a></li>
-                                            <li><a href="#">IKBC</a></li>
-                                            <li><a href="#">Razer</a></li>
-                                            <li><a href="#">Corsair</a></li>
+                                            <li><a href="/ProductList?categoryId=4&brandId=12">Akko</a></li>
+                                            <li><a href="/ProductList?categoryId=4&brandId=12">Corsair</a></li>
+                                            <li><a href="/ProductList?categoryId=4&brandId=12">DareU</a></li>
+                                            <li><a href="/ProductList?categoryId=4&brandId=12">Fuhlen</a></li>
+                                            <li><a href="/ProductList?categoryId=4&brandId=12">Rapoo</a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <span>Giá</span>
                                         <ul>
-                                            <li><a href="#">Below 1 milion dong</a></li>
-                                            <li><a href="#">Between 1 milion and 2 milion</a></li>
-                                            <li><a href="#">More than 2 milion dong</a></li>
+                                            <li><a href="/ProductList?categoryId=4&priceRange=under1">Dưới 1 Triệu</a></li>
+                                            <li><a href="/ProductList?categoryId=4&priceRange=1to2">1 - 2 Triệu</a></li>
+                                            <li><a href="/ProductList?categoryId=4&priceRange=over2">Trên 2 Triệu</a></li>
                                         </ul>
                                     </li>
-                                    <li>
+                      @*               <li>
                                         <span>Switch</span>
                                         <ul>
                                             <li><a href="#">Blue Switch</a></li>
@@ -305,12 +311,12 @@
                                             <li><a href="#">Brown Switch</a></li>
                                             <li><a href="#">Clear Switch</a></li>
                                         </ul>
-                                    </li>
+                                    </li> *@
                                 </ul>
                             </li>
                             <li>
                                 <ul class="subnav2">
-                                    <li>
+                                    @* <li>
                                         <span>Akko Brand</span>
                                         <ul>
                                             <li><a href="#">ACR series</a></li>
@@ -341,29 +347,28 @@
                                                 </a>
                                             </li>
                                         </ul>
-                                    </li>
+                                    </li> *@
                                 </ul>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <button class="btn" style="padding-left:61px">
-                            <i class="fa-solid fa-computer-mouse"></i>&nbsp&nbspChuột
-                        </button>
+                        <a href="/ProductList?categoryId=5" class="btn" type="button">
+                            <i class="fa-solid fa-laptop"></i> &nbspChuột
+                        </a>
                         <ul class="subnav" style="margin-top: -391px">
                             <li>
                                 <ul class="subnav2" style="margin-top: 125px">
                                     <li>
                                         <span>Hãng</span>
                                         <ul>
-                                            <li><a href="#">Logitech</a></li>
-                                            <li><a href="#">Razer</a></li>
-                                            <li><a href="#">Corsair</a></li>
-                                            <li><a href="#">Steelseries</a></li>
-                                            <li><a href="#">Asus</a></li>
+                                            <li><a href="/ProductList?categoryId=5&brandId=5">Logitech</a></li>
+                                            <li><a href="/ProductList?categoryId=5&brandId=8">Razer</a></li>
+                                            <li><a href="/ProductList?categoryId=5&brandId=13">Attack Shark</a></li>
+                                            <li><a href="/ProductList?categoryId=5&brandId=3">DareU</a></li>
                                         </ul>
                                     </li>
-                                    <li>
+                                    @* <li>
                                         <span>Logitech Brand
                                             span>
                                         <ul>
@@ -379,29 +384,29 @@
                                             <li><a href="#">Bluetooth</a></li>
                                             <li><a href="#">Có dây</a></li>
                                         </ul>
-                                    </li>
+                                    </li> *@
                                 </ul>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <button class="btn" style="border-radius: 0 0 0 5px">
-                            <i class="fa-solid fa-headphones"></i>&nbsp&nbspTai Nghe
-                        </button>
+                        <a href="/ProductList?categoryId=6" class="btn" type="button">
+                            <i class="fa-solid fa-laptop"></i> &nbspTai Nghe
+                        </a>
                         <ul class="subnav" style="margin-top: -469px">
                             <li>
                                 <ul class="subnav2" style="margin-top: 125px">
                                     <li>
-                                        <span>Brand</span>
+                                        <span>Hãng</span>
                                         <ul>
-                                            <li><a href="#">Logitech</a></li>
-                                            <li><a href="#">HyperX</a></li>
-                                            <li><a href="#">Razer</a></li>
-                                            <li><a href="#">Corsair</a></li>
-                                            <li><a href="#">Asus</a></li>
+                                            <li><a href="/ProductList?categoryId=6&brandId=2">Corsair</a></li>
+                                            <li><a href="/ProductList?categoryId=6&brandId=3">DareU</a></li>
+                                            <li><a href="/ProductList?categoryId=6&brandId=12">ASUS</a></li>
+                                            <li><a href="/ProductList?categoryId=6&brandId=14">HyperX</a></li>
+                                            <li><a href="/ProductList?categoryId=6&brandId=11">Xiberia</a></li>
                                         </ul>
                                     </li>
-                                    <li>
+                                   @*  <li>
                                         <span>Headphone Brand</span>
                                         <ul>
                                             <li><a href="#">SOUNDPEAT</a></li>
@@ -415,7 +420,7 @@
                                             <li><a href="#">Bluetooth</a></li>
                                             <li><a href="#">Có dây</a></li>
                                         </ul>
-                                    </li>
+                                    </li> *@
                                 </ul>
                             </li>
                         </ul>
@@ -482,19 +487,38 @@
 
     @*product section*@
 
+
+
+
     <div id="product">
         <div class="container">
             <h3 class="heading text-center font-weight-semibold mb-3">T H Ị N H &nbsp; H À N H</h3>
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                    @* @if (Model != null && Model.Count() > 0)
+                    @if (Model != null && Model.Count() > 0)
                     {
                         foreach (var item in Model)
                         {
-                            string url = $"/{item.Alias}-{item.ProductId}";
-                            
+                            string url = $"/{Utilities.SEOUrl(item.ProductName)}-{item.ProductID}";
+                            <div class="swiper-slide">
+                                <a href="@url">
+                                    <div class="slider-box">
+                                        <div class="img-box">
+                                            <img src="@item.ImageURL" alt="@item.ProductName" width="100%" height="200px" />
+
+                                        </div>
+                                        <p class="details">
+                                            @item.ProductName
+                                        </p>
+                                        <span class="price">
+                                            @item.Price.ToString("#,##0") VNĐ
+                                        </span>
+                                        <div class="btn buy-btn">Thêm vào giỏ</div>
+                                    </div>
+                                </a>
+                            </div>
                         }
-                    }*@
+                    }
                     <div class="swiper-slide">
                         <a asp-action="Index" asp-controller="Product">
                             <div class="slider-box">
@@ -513,7 +537,7 @@
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="#">
+                        <a asp-action="Index" asp-controller="Product">
                             <div class="slider-box">
                                 <div class="img-box"><img src="~/images/products/asus-gaming-rog.jpg" alt="" width="100%" height="200px" />
                                    
@@ -530,7 +554,7 @@
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="#">
+                        <a asp-action="Index" asp-controller="Product">
                             <div class="slider-box">
                                 <div class="img-box">
                                     <img src="~/images/products/asus-vivobook-15x-oled.jpg" alt="" width="100%" height="200px" />
@@ -547,7 +571,7 @@
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="#">
+                        <a asp-action="Index" asp-controller="Product">
                             <div class="slider-box">
                                 <div class="img-box">
                                     <img src="~/images/products/laptop-lenovo-ideapad.jpg" width="100%" height="200px" />
@@ -565,7 +589,7 @@
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="#">
+                        <a asp-action="Index" asp-controller="Product">
                             <div class="slider-box">
                                 <div class="img-box">
                                     <img src="~/assets/img/pc1.jpg" alt="" width="100%" height="200px" />
@@ -582,7 +606,7 @@
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="#">
+                        <a asp-action="Index" asp-controller="Product">
                             <div class="slider-box">
                                 <div class="img-box">
                                     <img src="~/assets/img/pc1.jpg" alt="" width="100%" height="200px" />
@@ -599,7 +623,7 @@
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="#">
+                        <a asp-action="Index" asp-controller="Product">
                             <div class="slider-box">
                                 <div class="img-box">
                                     <img src="~/assets/img/pc1.jpg" alt="" width="100%" height="200px" />
@@ -616,7 +640,7 @@
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="#">
+                        <a asp-action="Index" asp-controller="Product">
                             <div class="slider-box">
                                 <div class="img-box">
                                     <img src="~/assets/img/pc1.jpg" alt="" width="100%" height="200px" />
@@ -633,7 +657,7 @@
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="#">
+                        <a asp-action="Index" asp-controller="Product">
                             <div class="slider-box">
                                 <div class="img-box">
                                     <img src="~/assets/img/pc1.jpg" alt="" width="100%" height="200px" />
@@ -650,7 +674,7 @@
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="#">
+                        <a asp-action="Index" asp-controller="Product">
                             <div class="slider-box">
                                 <div class="img-box">
                                     <img src="~/assets/img/pc1.jpg" alt="" width="100%" height="200px" />
@@ -667,7 +691,7 @@
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="#">
+                        <a asp-action="Index" asp-controller="Product">
                             <div class="slider-box">
                                 <div class="img-box">
                                     <img src="~/assets/img/pc1.jpg" alt="" width="100%" height="200px" />
@@ -691,7 +715,7 @@
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <a href="#">
+                        <a asp-action="Index" asp-controller="Product">
                             <div class="slider-box">
                                 <div class="img-box"><img src="~/images/products/laptop-dell-inspiron-15-3520-i3u082w11blu.jpg" width="100%" height="200px" />
                                 </div>
@@ -707,7 +731,7 @@
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="#">
+                        <a asp-action="Index" asp-controller="Product">
                             <div class="slider-box">
                                 <div class="img-box"><img src="~/images/products/macbook-pro-14-m1-core-gpu.jpeg" alt="" width="100%" height="200px" />
                                 </div>
@@ -723,7 +747,7 @@
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="#">
+                        <a asp-action="Index" asp-controller="Product">
                             <div class="slider-box">
                                 <div class="img-box">
                                     <img src="~/assets/img/laptop new arrival.jpg" alt="" width="100%" height="200px" />
@@ -740,7 +764,7 @@
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="#">
+                        <a asp-action="Index" asp-controller="Product">
                             <div class="slider-box">
                                 <div class="img-box">
                                     <img src="~/images/products/laptop-asus-vivobook-15x-oled-a1503za-l1421w.png" alt="" width="100%" height="200px" />
@@ -757,7 +781,7 @@
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="#">
+                        <a asp-action="Index" asp-controller="Product">
                             <div class="slider-box">
                                 <div class="img-box">
                                     <img src="~/assets/img/laptop new arrival.jpg" alt="" width="100%" height="200px" />
@@ -774,7 +798,7 @@
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="#">
+                        <a asp-action="Index" asp-controller="Product">
                             <div class="slider-box">
                                 <div class="img-box">
                                     <img src="~/assets/img/laptop new arrival.jpg" alt="" width="100%" height="200px" />
@@ -791,7 +815,7 @@
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="#">
+                        <a asp-action="Index" asp-controller="Product">
                             <div class="slider-box">
                                 <div class="img-box">
                                     <img src="~/assets/img/laptop new arrival.jpg" alt="" width="100%" height="200px" />
@@ -808,7 +832,7 @@
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="#">
+                        <a asp-action="Index" asp-controller="Product">
                             <div class="slider-box">
                                 <div class="img-box">
                                     <img src="~/assets/img/laptop new arrival.jpg" alt="" width="100%" height="200px" />
@@ -825,7 +849,7 @@
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="#">
+                        <a asp-action="Index" asp-controller="Product">
                             <div class="slider-box">
                                 <div class="img-box">
                                     <img src="~/assets/img/laptop new arrival.jpg" alt="" width="100%" height="200px" />
@@ -842,7 +866,7 @@
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="#">
+                        <a asp-action="Index" asp-controller="Product">
                             <div class="slider-box">
                                 <div class="img-box">
                                     <img src="~/assets/img/laptop new arrival.jpg" alt="" width="100%" height="200px" />
@@ -859,7 +883,7 @@
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="#">
+                        <a asp-action="Index" asp-controller="Product">
                             <div class="slider-box">
                                 <div class="img-box">
                                     <img src="~/assets/img/laptop new arrival.jpg" alt="" width="100%" height="200px" />
@@ -887,3 +911,82 @@
 </div>
 
 
+
+
+
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            // Lắng nghe sự kiện thay đổi trên dropdown Sắp xếp
+            $("#sortOption").change(function () {
+                console.log("Sort selection changed");
+                applyFilterAndSort();
+            });
+
+            // Lắng nghe sự kiện click trên tất cả các liên kết danh mục
+            $(".category-link").click(function () {
+                // Lấy CategoryID từ data-attribute
+                var categoryId = $(this).data("category-id");
+                console.log("Category selected:", categoryId);
+                $("#categoryId").val(categoryId);  // Cập nhật giá trị cho categoryId
+                applyFilterAndSort();
+            });
+
+            // Khi người dùng chọn thương hiệu
+            $("#brandId").change(function () {
+                applyFilterAndSort();
+            });
+
+            // Lắng nghe sự kiện nhập từ khóa tìm kiếm
+            $("#keyword").keyup(function () {
+                var strkeyword = $('#keyword').val();
+                $.ajax({
+                    url: '/Admin/Search/FindProduct/',
+                    datatype: "json",
+                    type: "POST",
+                    data: { keyword: strkeyword },
+                    async: true,
+                    success: function (results) {
+                        $("#records_table").html("");
+                        $("#records_table").html(results);
+                    },
+                    error: function (xhr) {
+                        alert('Error in search');
+                    }
+                });
+            });
+        });
+
+        // Hàm áp dụng lọc và sắp xếp
+        function applyFilterAndSort() {
+            var categoryId = $("#categoryId").val() || 0;  // Lấy giá trị của categoryId
+            var brandId = $("#brandId").val() || 0;        // Lấy giá trị của brandId
+            var sortOption = $("#sortOption").val() || 0;  // Lấy giá trị của sortOption
+
+            var url = '/Product/FilterAndSort';
+            console.log("Applying Filter and Sort with values:");
+            console.log("Category ID:", categoryId);
+            console.log("Brand ID:", brandId);
+            console.log("Sort Option:", sortOption);
+
+            // Gửi yêu cầu Ajax
+            $.ajax({
+                url: url,
+                type: 'GET',
+                data: {
+                    categoryId: categoryId,
+                    brandId: brandId,
+                    sortOption: sortOption
+                },
+                success: function (results) {
+                    console.log("AJAX request successful");
+                    $("#product-list").html(results); // Cập nhật danh sách sản phẩm
+                },
+                error: function () {
+                    alert('Error in filtering and sorting');
+                }
+            });
+        }
+    </script>
+}
