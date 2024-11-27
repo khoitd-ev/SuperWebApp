@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "E:\\UIT\\Steal\\newWorld\\SuperWebApp\\BlueSports\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|e:\\uit\\steal\\newworld\\superwebapp\\bluesports\\bluesports\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|solutionrelative:bluesports\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|e:\\uit\\steal\\newworld\\superwebapp\\bluesports\\bluesports\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|solutionrelative:bluesports\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -61,10 +65,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|e:\\uit\\steal\\newworld\\superwebapp\\bluesports\\bluesports\\services\\momopaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|solutionrelative:bluesports\\services\\momopaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|e:\\uit\\steal\\newworld\\superwebapp\\bluesports\\bluesports\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|solutionrelative:bluesports\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2A3B065B-254B-4197-B5EA-5F221CCAEBFF}|BlueSports\\BlueSports.csproj|e:\\uit\\steal\\newworld\\superwebapp\\bluesports\\bluesports\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -126,7 +126,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 20,
           "Children": [
             {
               "$type": "Bookmark",
@@ -134,7 +134,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Category.cs",
               "DocumentMoniker": "E:\\UIT\\Steal\\newWorld\\SuperWebApp\\BlueSports\\BlueSports\\Models\\Category.cs",
               "RelativeDocumentMoniker": "BlueSports\\Models\\Category.cs",
@@ -146,7 +146,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "ShoppingCart.cs",
               "DocumentMoniker": "E:\\UIT\\Steal\\newWorld\\SuperWebApp\\BlueSports\\BlueSports\\Models\\ShoppingCart.cs",
               "RelativeDocumentMoniker": "BlueSports\\Models\\ShoppingCart.cs",
@@ -158,7 +158,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Index.cshtml",
               "DocumentMoniker": "E:\\UIT\\Steal\\newWorld\\SuperWebApp\\BlueSports\\BlueSports\\Views\\Checkout\\Index.cshtml",
               "RelativeDocumentMoniker": "BlueSports\\Views\\Checkout\\Index.cshtml",
@@ -170,7 +170,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "MoMoPaymentService.cs",
               "DocumentMoniker": "E:\\UIT\\Steal\\newWorld\\SuperWebApp\\BlueSports\\BlueSports\\Services\\MoMoPaymentService.cs",
               "RelativeDocumentMoniker": "BlueSports\\Services\\MoMoPaymentService.cs",
@@ -182,7 +182,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "MuaHangSuccessVM.cs",
               "DocumentMoniker": "E:\\UIT\\Steal\\newWorld\\SuperWebApp\\BlueSports\\BlueSports\\HandleAdmin\\ModelViews\\MuaHangSuccessVM.cs",
               "RelativeDocumentMoniker": "BlueSports\\HandleAdmin\\ModelViews\\MuaHangSuccessVM.cs",
@@ -194,7 +194,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "LoginViewModel.cs",
               "DocumentMoniker": "E:\\UIT\\Steal\\newWorld\\SuperWebApp\\BlueSports\\BlueSports\\HandleAdmin\\ModelViews\\LoginViewModel.cs",
               "RelativeDocumentMoniker": "BlueSports\\HandleAdmin\\ModelViews\\LoginViewModel.cs",
@@ -230,7 +230,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Order.cs",
               "DocumentMoniker": "E:\\UIT\\Steal\\newWorld\\SuperWebApp\\BlueSports\\BlueSports\\Models\\Order.cs",
               "RelativeDocumentMoniker": "BlueSports\\Models\\Order.cs",
@@ -242,7 +242,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "OrderDetail.cs",
               "DocumentMoniker": "E:\\UIT\\Steal\\newWorld\\SuperWebApp\\BlueSports\\BlueSports\\Models\\OrderDetail.cs",
               "RelativeDocumentMoniker": "BlueSports\\Models\\OrderDetail.cs",
@@ -290,13 +290,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "E:\\UIT\\Steal\\newWorld\\SuperWebApp\\BlueSports\\BlueSports\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "BlueSports\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "E:\\UIT\\Steal\\newWorld\\SuperWebApp\\BlueSports\\BlueSports\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "BlueSports\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAAABMAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-26T17:40:11.305Z",
               "EditorCaption": ""
@@ -363,15 +363,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 0,
               "Title": "Index.cshtml",
               "DocumentMoniker": "E:\\UIT\\Steal\\newWorld\\SuperWebApp\\BlueSports\\BlueSports\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "BlueSports\\Views\\Home\\Index.cshtml",
               "ToolTip": "E:\\UIT\\Steal\\newWorld\\SuperWebApp\\BlueSports\\BlueSports\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "BlueSports\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAHcBAAAAAAAAAAAqwI0BAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAIMBAAAAAAAAAAAqwIkBAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-26T17:28:40.42Z"
+              "WhenOpened": "2024-11-26T17:28:40.42Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -387,7 +388,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "CheckoutController.cs",
               "DocumentMoniker": "E:\\UIT\\Steal\\newWorld\\SuperWebApp\\BlueSports\\BlueSports\\Controllers\\CheckoutController.cs",
               "RelativeDocumentMoniker": "BlueSports\\Controllers\\CheckoutController.cs",
@@ -395,8 +396,7 @@
               "RelativeToolTip": "BlueSports\\Controllers\\CheckoutController.cs",
               "ViewState": "AgIAAJkAAAAAAAAAAAAnwKwAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T17:16:17.266Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-26T17:16:17.266Z"
             },
             {
               "$type": "Document",
@@ -424,7 +424,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "MomoPaymentRequest.cs",
               "DocumentMoniker": "E:\\UIT\\Steal\\newWorld\\SuperWebApp\\BlueSports\\BlueSports\\Models\\MomoPaymentRequest.cs",
               "RelativeDocumentMoniker": "BlueSports\\Models\\MomoPaymentRequest.cs",
@@ -436,7 +436,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Error.cs",
               "DocumentMoniker": "E:\\UIT\\Steal\\newWorld\\SuperWebApp\\BlueSports\\BlueSports\\Models\\Error.cs",
               "RelativeDocumentMoniker": "BlueSports\\Models\\Error.cs",
@@ -448,7 +448,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Error.cshtml",
               "DocumentMoniker": "E:\\UIT\\Steal\\newWorld\\SuperWebApp\\BlueSports\\BlueSports\\Views\\Home\\Error.cshtml",
               "RelativeDocumentMoniker": "BlueSports\\Views\\Home\\Error.cshtml",
@@ -460,7 +460,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "appsettings.json",
               "DocumentMoniker": "E:\\UIT\\Steal\\newWorld\\SuperWebApp\\BlueSports\\BlueSports\\appsettings.json",
               "RelativeDocumentMoniker": "BlueSports\\appsettings.json",
@@ -472,7 +472,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\UIT\\Steal\\newWorld\\SuperWebApp\\BlueSports\\BlueSports\\Program.cs",
               "RelativeDocumentMoniker": "BlueSports\\Program.cs",
